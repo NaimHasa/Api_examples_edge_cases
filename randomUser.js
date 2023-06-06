@@ -8,8 +8,10 @@ const displayLoadData = users => {
 
     const userContainer = document.getElementById('randomUsers');
     for (const user of users) {
-        console.log(user);
+        // console.log(user);
+
         const userDiv = document.createElement('div')
+        userDiv.classList.add('style-bg')
         userDiv.innerHTML = `
         
         <h1>Name: ${user.name.first}</h1>
